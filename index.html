@@ -19,7 +19,9 @@
   <body>
     <!-- header seciton starts here -->
 
-    <div class="mt-[25px] flex justify-between">
+    <div
+      class="mt-[25px] flex flex-col sm:flex-row justify-between items-center gap-4 px-4 sm:px-[50px]"
+    >
       <div class="flex gap-4 ml-[50px] text-[#006747] text-xl font-extrabold">
         <img class="h-[50px] w-[50x]" src="image/logo.png" alt="" />
         <h1>
@@ -52,23 +54,28 @@
 
     <!-- banner section starts here  -->
     <div
-      class="h-[239px] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] flex flex-col justify-center items-center mt-6"
+      class="h-auto py-8 sm:h-[239px] px-4 text-center bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] flex flex-col justify-center items-center mt-6"
     >
-      <img src="image/logo-dark.png" class="h-[92px]" alt="" />
-      <h1 class="text-[40px] font-bold text-white">
+      <img src="image/logo-dark.png" class="h-[60px] sm:h-[92px]" alt="" />
+
+      <h1 class="text-2xl sm:text-[40px] font-bold text-white">
         Emergency Service Directory
       </h1>
-      <p class="font-semibold text-xl text-white">
+      <p class="font-semibold text-sm sm:text-xl text-white mt-1">
         Government Emergency Services at Your Fingertip – A Project by
         Government of the People’s Republic of Bangladesh
       </p>
     </div>
 
     <!-- help line section starts here -->
-    <div class="bg-[#41ff6b1a] flex gap-4 p-10 justify-center">
-      <div class="flex-1 grid grid-cols-3 gap-[30px] max-w-[1370px]">
+    <div
+      class="bg-[#41ff6b1a] flex flex-col lg:flex-row gap-4 p-4 sm:p-10 justify-center"
+    >
+      <div
+        class="flex-1 flex-col md:grid md:grid-cols-3 gap-[30px] max-w-[1370px]"
+      >
         <!-- card-1 -->
-        <div class="bg-white h-[340px] w-full rounded-xl shadow-md">
+        <div class="bg-white w-full rounded-xl shadow-md">
           <div class="p-6">
             <div class="flex justify-between">
               <img
@@ -106,12 +113,13 @@
             </div>
           </div>
         </div>
-        <div class="bg-white h-[340px] w-full rounded-xl shadow-md">
+        <!-- card-2 -->
+        <div class="bg-white w-full rounded-xl shadow-md">
           <div class="p-6">
             <div class="flex justify-between">
               <img
-                class="h-13 w-13 bg-[#FFE3E2] p-3 rounded-2xl"
-                src="image/emergency.png"
+                class="h-13 w-13 bg-[#DFEFFF] p-3 rounded-2xl"
+                src="image/police.png"
                 alt=""
               />
               <button class="heart-btn text-[#5C5C5C]">
@@ -119,13 +127,13 @@
               </button>
             </div>
 
-            <h1 class="text-2xl font-bold mt-4">National Emergency Number</h1>
-            <p class="text-[18px] text-gray-500">National Emergency</p>
+            <h1 class="text-2xl font-bold mt-4">Police Helpline Number</h1>
+            <p class="text-[18px] text-gray-500">Police</p>
             <p class="mt-[24px] font-bold text-3xl">999</p>
             <p
-              class="bg-gray-200 px-3 w-[50px] rounded-2xl font-semibold text-[#5C5C5C]"
+              class="bg-gray-200 px-3 w-[70px] rounded-2xl font-semibold text-[#5C5C5C]"
             >
-              All
+              Police
             </p>
 
             <div class="mt-5 flex gap-3">
@@ -144,12 +152,13 @@
             </div>
           </div>
         </div>
-        <div class="bg-white h-[340px] w-full rounded-xl shadow-md">
+        <!-- card-3 -->
+        <div class="bg-white w-full rounded-xl shadow-md">
           <div class="p-6">
             <div class="flex justify-between">
               <img
                 class="h-13 w-13 bg-[#FFE3E2] p-3 rounded-2xl"
-                src="image/emergency.png"
+                src="image/fire-service.png"
                 alt=""
               />
               <button class="heart-btn text-[#5C5C5C]">
@@ -157,13 +166,13 @@
               </button>
             </div>
 
-            <h1 class="text-2xl font-bold mt-4">National Emergency Number</h1>
-            <p class="text-[18px] text-gray-500">National Emergency</p>
+            <h1 class="text-2xl font-bold mt-4">Fire Service Number</h1>
+            <p class="text-[18px] text-gray-500">Fire Service</p>
             <p class="mt-[24px] font-bold text-3xl">999</p>
             <p
               class="bg-gray-200 px-3 w-[50px] rounded-2xl font-semibold text-[#5C5C5C]"
             >
-              All
+              Fire
             </p>
 
             <div class="mt-5 flex gap-3">
@@ -182,12 +191,13 @@
             </div>
           </div>
         </div>
-        <div class="bg-white h-[340px] w-full rounded-xl shadow-md">
+        <!-- card-4 -->
+        <div class="bg-white w-full rounded-xl shadow-md">
           <div class="p-6">
             <div class="flex justify-between">
               <img
                 class="h-13 w-13 bg-[#FFE3E2] p-3 rounded-2xl"
-                src="image/emergency.png"
+                src="image/ambulance.png"
                 alt=""
               />
               <button class="heart-btn text-[#5C5C5C]">
@@ -195,13 +205,13 @@
               </button>
             </div>
 
-            <h1 class="text-2xl font-bold mt-4">National Emergency Number</h1>
-            <p class="text-[18px] text-gray-500">National Emergency</p>
-            <p class="mt-[24px] font-bold text-3xl">999</p>
+            <h1 class="text-2xl font-bold mt-4">Ambulance Service</h1>
+            <p class="text-[18px] text-gray-500">Ambulance</p>
+            <p class="mt-[24px] font-bold text-3xl">1994-999999</p>
             <p
-              class="bg-gray-200 px-3 w-[50px] rounded-2xl font-semibold text-[#5C5C5C]"
+              class="bg-gray-200 px-3 w-[70px] rounded-2xl font-semibold text-[#5C5C5C]"
             >
-              All
+              Health
             </p>
 
             <div class="mt-5 flex gap-3">
@@ -220,7 +230,8 @@
             </div>
           </div>
         </div>
-        <div class="bg-white h-[340px] w-full rounded-xl shadow-md">
+        <!-- card-5 -->
+        <div class="bg-white w-full rounded-xl shadow-md">
           <div class="p-6">
             <div class="flex justify-between">
               <img
@@ -233,13 +244,13 @@
               </button>
             </div>
 
-            <h1 class="text-2xl font-bold mt-4">National Emergency Number</h1>
-            <p class="text-[18px] text-gray-500">National Emergency</p>
-            <p class="mt-[24px] font-bold text-3xl">999</p>
+            <h1 class="text-2xl font-bold mt-4">Women & Child Helpline</h1>
+            <p class="text-[18px] text-gray-500">Women & Child Helpline</p>
+            <p class="mt-[24px] font-bold text-3xl">109</p>
             <p
-              class="bg-gray-200 px-3 w-[50px] rounded-2xl font-semibold text-[#5C5C5C]"
+              class="bg-gray-200 px-3 w-[60px] rounded-2xl font-semibold text-[#5C5C5C]"
             >
-              All
+              Help
             </p>
 
             <div class="mt-5 flex gap-3">
@@ -258,7 +269,8 @@
             </div>
           </div>
         </div>
-        <div class="bg-white h-[340px] w-full rounded-xl shadow-md">
+        <!-- card-6 -->
+        <div class="bg-white w-full rounded-xl shadow-md">
           <div class="p-6">
             <div class="flex justify-between">
               <img
@@ -271,13 +283,13 @@
               </button>
             </div>
 
-            <h1 class="text-2xl font-bold mt-4">National Emergency Number</h1>
-            <p class="text-[18px] text-gray-500">National Emergency</p>
-            <p class="mt-[24px] font-bold text-3xl">999</p>
+            <h1 class="text-2xl font-bold mt-4">Anti-Corruption Helpline</h1>
+            <p class="text-[18px] text-gray-500">Anti-Corruption</p>
+            <p class="mt-[24px] font-bold text-3xl">106</p>
             <p
-              class="bg-gray-200 px-3 w-[50px] rounded-2xl font-semibold text-[#5C5C5C]"
+              class="bg-gray-200 px-3 w-[65px] rounded-2xl font-semibold text-[#5C5C5C]"
             >
-              All
+              Govt.
             </p>
 
             <div class="mt-5 flex gap-3">
@@ -296,7 +308,8 @@
             </div>
           </div>
         </div>
-        <div class="bg-white h-[340px] w-full rounded-xl shadow-md">
+        <!-- card-7 -->
+        <div class="bg-white w-full rounded-xl shadow-md">
           <div class="p-6">
             <div class="flex justify-between">
               <img
@@ -309,13 +322,13 @@
               </button>
             </div>
 
-            <h1 class="text-2xl font-bold mt-4">National Emergency Number</h1>
-            <p class="text-[18px] text-gray-500">National Emergency</p>
-            <p class="mt-[24px] font-bold text-3xl">999</p>
+            <h1 class="text-2xl font-bold mt-4">Electricity Helpline</h1>
+            <p class="text-[18px] text-gray-500">Electricity Outage</p>
+            <p class="mt-[24px] font-bold text-3xl">16216</p>
             <p
-              class="bg-gray-200 px-3 w-[50px] rounded-2xl font-semibold text-[#5C5C5C]"
+              class="bg-gray-200 px-3 w-[100px] rounded-2xl font-semibold text-[#5C5C5C]"
             >
-              All
+              Electricity
             </p>
 
             <div class="mt-5 flex gap-3">
@@ -334,12 +347,13 @@
             </div>
           </div>
         </div>
-        <div class="bg-white h-[340px] w-full rounded-xl shadow-md">
+        <!-- card-8 -->
+        <div class="bg-white w-full rounded-xl shadow-md">
           <div class="p-6">
             <div class="flex justify-between">
               <img
                 class="h-13 w-13 bg-[#FFE3E2] p-3 rounded-2xl"
-                src="image/emergency.png"
+                src="image/brac.png"
                 alt=""
               />
               <button class="heart-btn text-[#5C5C5C]">
@@ -347,13 +361,13 @@
               </button>
             </div>
 
-            <h1 class="text-2xl font-bold mt-4">National Emergency Number</h1>
-            <p class="text-[18px] text-gray-500">National Emergency</p>
-            <p class="mt-[24px] font-bold text-3xl">999</p>
+            <h1 class="text-2xl font-bold mt-4">Brac Helpline</h1>
+            <p class="text-[18px] text-gray-500">Brac</p>
+            <p class="mt-[24px] font-bold text-3xl">16445</p>
             <p
-              class="bg-gray-200 px-3 w-[50px] rounded-2xl font-semibold text-[#5C5C5C]"
+              class="bg-gray-200 px-3 w-[60px] rounded-2xl font-semibold text-[#5C5C5C]"
             >
-              All
+              NGO
             </p>
 
             <div class="mt-5 flex gap-3">
@@ -372,12 +386,13 @@
             </div>
           </div>
         </div>
-        <div class="bg-white h-[340px] w-full rounded-xl shadow-md">
+        <!-- card-9 -->
+        <div class="bg-white w-full rounded-xl shadow-md">
           <div class="p-6">
             <div class="flex justify-between">
               <img
                 class="h-13 w-13 bg-[#FFE3E2] p-3 rounded-2xl"
-                src="image/emergency.png"
+                src="image/Bangladesh-Railway.png"
                 alt=""
               />
               <button class="heart-btn text-[#5C5C5C]">
@@ -385,13 +400,13 @@
               </button>
             </div>
 
-            <h1 class="text-2xl font-bold mt-4">National Emergency Number</h1>
-            <p class="text-[18px] text-gray-500">National Emergency</p>
-            <p class="mt-[24px] font-bold text-3xl">999</p>
+            <h1 class="text-2xl font-bold mt-4">Bangladesh Railway Helpline</h1>
+            <p class="text-[18px] text-gray-500">Bangladesh Railway</p>
+            <p class="mt-[24px] font-bold text-3xl">163</p>
             <p
-              class="bg-gray-200 px-3 w-[50px] rounded-2xl font-semibold text-[#5C5C5C]"
+              class="bg-gray-200 px-3 w-[70px] rounded-2xl font-semibold text-[#5C5C5C]"
             >
-              All
+              Travel
             </p>
 
             <div class="mt-5 flex gap-3">
