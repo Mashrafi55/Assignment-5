@@ -65,8 +65,8 @@
     </div>
 
     <!-- help line section starts here -->
-    <div class="bg-[#41ff6b1a]">
-      <div class="px-10 pt-10 grid grid-cols-3 gap-[30px]">
+    <div class="bg-[#41ff6b1a] flex gap-4 p-10 justify-center">
+      <div class="flex-1 grid grid-cols-3 gap-[30px] max-w-[1370px]">
         <!-- card-1 -->
         <div class="bg-white h-[340px] w-full rounded-xl shadow-md">
           <div class="p-6">
@@ -413,8 +413,21 @@
 
         <!-- end -->
       </div>
-      <div>
-        <!-- this is left side where i will store the details  -->
+
+      <!-- right side -->
+      <div class="bg-white pt-5 w-[400px] rounded-xl shadow-md">
+        <div class="flex gap-20">
+          <div class="flex items-center gap-2 ml-7">
+            <i class="fa-regular text-xl fa-clock"></i>
+            <p class="text-xl font-semibold">Call History</p>
+          </div>
+
+          <button
+            class="rounded-[50px] w-[127px] h-[52px] bg-[#00A63E] font-semibold text-white text-xl"
+          >
+            Clear
+          </button>
+        </div>
       </div>
     </div>
   </body>
