@@ -22,3 +22,48 @@ for (const btn of heartBtns) {
     }
   });
 }
+
+const callBtns = document.getElementsByClassName("call-btn");
+
+const coinCount = document.getElementById("coin-count");
+
+const callHistoryContainer = document.getElementById("call-history-container");
+
+
+for (const btn of callBtns) {
+  btn.addEventListener("click", function () {
+
+    const card = btn.closest(".rounded-xl");
+    const serviceName = card.querySelector("h1").innerText
+    const serviceNumber = card.querySelector(".text-3xl").innerText;
+
+    const coins = Number(coinCount.innerText);
+    if(coins < 20){
+      alert("Not enough coins! Minimum 20 coins needed to call.")
+      return;
+    }
+
+     alert(`Calling ${serviceName} — ${serviceNumber}`);
+
+    coinCount.innerText = coins -20;
+     
+     const historyItem = document.createElement("div");
+    historyItem.innerHTML = `
+      <div class="flex bg-[#FAFAFA] justify-between items-center py-3  border-red-100 rounded-lg px-4 mx-[24px] mb-[8px]">
+        <div>
+          <p class="font-semibold text-[18px]">${serviceName}</p>
+          <p class="text-gray-500 text-[18px]">${serviceNumber}</p>
+        </div>
+        <p>${new Date().toLocaleTimeString()}</p>
+      </div>
+    `;
+    callHistoryContainer.appendChild(historyItem);
+
+
+    
+   
+    
+
+    
+  });
+}

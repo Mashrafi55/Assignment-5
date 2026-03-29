@@ -15,8 +15,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <link rel="stylesheet" href="style.css">
   </head>
-  <body>
+  <body >
     <!-- header seciton starts here -->
 
     <div
@@ -40,7 +42,7 @@
         <div
           class="flex items-center bg-[#41ff6b1a] px-4 gap-2 py-2 rounded-full"
         >
-          <p class="font-bold text-xl">100</p>
+          <p id="coin-count" class="font-bold text-xl">100</p>
           <img class="h-[24px] w-[24px]" src="image/coin.png" alt="" />
         </div>
 
@@ -105,7 +107,7 @@
               </button>
 
               <button
-                class="px-8 flex-1 py-2 bg-[#00A63E] rounded-lg text-white"
+                class="call-btn px-8 flex-1 py-2 bg-[#00A63E] rounded-lg text-white"
               >
                 <i class="fa-solid fa-phone"></i>
                 Call
@@ -144,7 +146,7 @@
               </button>
 
               <button
-                class="px-8 flex-1 py-2 bg-[#00A63E] rounded-lg text-white"
+                class="call-btn px-8 flex-1 py-2 bg-[#00A63E] rounded-lg text-white"
               >
                 <i class="fa-solid fa-phone"></i>
                 Call
@@ -183,7 +185,7 @@
               </button>
 
               <button
-                class="px-8 flex-1 py-2 bg-[#00A63E] rounded-lg text-white"
+                class="call-btn px-8 flex-1 py-2 bg-[#00A63E] rounded-lg text-white"
               >
                 <i class="fa-solid fa-phone"></i>
                 Call
@@ -222,7 +224,7 @@
               </button>
 
               <button
-                class="px-8 flex-1 py-2 bg-[#00A63E] rounded-lg text-white"
+                class="call-btn px-8 flex-1 py-2 bg-[#00A63E] rounded-lg text-white"
               >
                 <i class="fa-solid fa-phone"></i>
                 Call
@@ -261,7 +263,7 @@
               </button>
 
               <button
-                class="px-8 flex-1 py-2 bg-[#00A63E] rounded-lg text-white"
+                class="call-btn px-8 flex-1 py-2 bg-[#00A63E] rounded-lg text-white"
               >
                 <i class="fa-solid fa-phone"></i>
                 Call
@@ -300,7 +302,7 @@
               </button>
 
               <button
-                class="px-8 flex-1 py-2 bg-[#00A63E] rounded-lg text-white"
+                class="call-btn px-8 flex-1 py-2 bg-[#00A63E] rounded-lg text-white"
               >
                 <i class="fa-solid fa-phone"></i>
                 Call
@@ -339,7 +341,7 @@
               </button>
 
               <button
-                class="px-8 flex-1 py-2 bg-[#00A63E] rounded-lg text-white"
+                class="call-btn px-8 flex-1 py-2 bg-[#00A63E] rounded-lg text-white"
               >
                 <i class="fa-solid fa-phone"></i>
                 Call
@@ -378,7 +380,7 @@
               </button>
 
               <button
-                class="px-8 flex-1 py-2 bg-[#00A63E] rounded-lg text-white"
+                class="call-btn px-8 flex-1 py-2 bg-[#00A63E] rounded-lg text-white"
               >
                 <i class="fa-solid fa-phone"></i>
                 Call
@@ -417,7 +419,7 @@
               </button>
 
               <button
-                class="px-8 flex-1 py-2 bg-[#00A63E] rounded-lg text-white"
+                class="call-btn px-8 flex-1 py-2 bg-[#00A63E] rounded-lg text-white"
               >
                 <i class="fa-solid fa-phone"></i>
                 Call
@@ -430,7 +432,7 @@
       </div>
 
       <!-- right side -->
-      <div class="bg-white pt-5 w-[400px] rounded-xl shadow-md">
+      <div id="" class="bg-white pt-5 w-[400px] rounded-xl shadow-md">
         <div class="flex gap-20">
           <div class="flex items-center gap-2 ml-7">
             <i class="fa-regular text-xl fa-clock"></i>
@@ -442,6 +444,9 @@
           >
             Clear
           </button>
+        </div>
+        <div id="call-history-container" class="pt-[15px]" >
+         
         </div>
       </div>
     </div>
